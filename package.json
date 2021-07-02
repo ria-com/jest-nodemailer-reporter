@@ -8,7 +8,7 @@
     "devDependencies": {},
     "dependencies": {
         "nodemailer": "^6.6.2",
-        "strip-ansi": "^7.0.0"
+        "strip-ansi": "^5.2.0"
     },
     "files": [
         "src"
