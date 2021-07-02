@@ -88,10 +88,6 @@ class DocumentTestHooksReporter {
                      { html: `<pre>${failureMessages.join('<br /><br />')}</pre>` }
                      , errorSendMail)
             )
-            // sendmail({
-            //     html: `<pre>${failureMessages.join('<br /><br />')}</pre>`,
-            //     ...this._emailOptions,
-            // }, errorSendMail)
         } else if (this._reportIfSuccess) {
             transporter.sendMail(Object.assign({},this._emailOptions,
                 { html: `<pre>Tests is success</pre>` }
