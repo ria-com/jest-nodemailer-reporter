@@ -1,0 +1,17 @@
+{
+    "name": "jest-nodemailer-reporter",
+    "version": "1.0.1",
+    "main": "src/index.js",
+    "repository": "git@github.com:ria-com/jest-nodemailer-reporter.git",
+    "author": "Oleg Cherniy <oleg.cherniy@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {},
+    "dependencies": {
+        "nodemailer": "^6.6.2",
+        "nodemailer-smtp-transport": "^2.7.4",
+        "strip-ansi": "^5.2.0"
+    },
+    "files": [
+        "src"
+    ]
+}

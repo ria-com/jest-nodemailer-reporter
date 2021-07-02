@@ -11,8 +11,6 @@
 
 ```sh
 npm install --save-dev jest-nodemailer-reporter
-# or
-yarn add -D jest-nodemailer-reporter
 ```
 
 ## Usage
@@ -26,16 +24,14 @@ module.exports = {
         "default",
         ["jest-nodemailer-reporter", {
             "transporter": {
-                sendmail: true,
-                newline: 'unix',
-                path: '/usr/sbin/sendmail'
+                "sendmail": true,
+                "newline": 'unix',
+                "path": '/usr/sbin/sendmail'
             },
-            "options": {
-                from: 'from@example.com',
-                to: 'to@example.com',
-                subject: 'Optional subject', // optional
-            },
-            reportIfSuccess: true, // optional, default is false; it send e-mail message if tests were successful
+            "from": "from@example.com",
+            "to": "to@example.com",
+            "subject": "Optional subject", // optional
+            "reportIfSuccess": true // optional, default is false; it send e-mail message if tests were successful
         }]
     ],
     ...
